@@ -1,18 +1,21 @@
-import { useState } from 'react'
-import Footer from './components/Footer'
-import Intro from './components/Intro'
-import Portfolio from './components/Portfolio'
+import Footer from "./components/Footer";
+import Hello from "./components/Hello";
+import Intro from "./components/Intro";
+import Navbar from "./components/Navbar";
+import Portfolio from "./components/Portfolio";
+import Timeline from "./components/Timeline";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-
-      <Intro />
+    <div className="">
+      <Navbar />
+      <Hello />
+      <Intro  />
+      <Timeline />
       <Portfolio />
-    </>
-  )
+      <Footer />
+    </div>
+  );
 }
 
-export default App
+export default App;
