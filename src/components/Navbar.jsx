@@ -26,7 +26,7 @@ const Navbar = () => {
       <div className="hidden md:flex px-5">
       <Button buttonText={"Resume"} />
       </div>
-      <div onClick={handleNav} className=" relative md:hidden">
+      <div onClick={handleNav} className="relative md:hidden">
         {nav ? (
           <div className=" relative z-40 text-hover-400 ">
             <AiOutlineClose size={30} />

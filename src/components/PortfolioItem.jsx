@@ -3,21 +3,26 @@ import { FiGithub, FiExternalLink } from "react-icons/fi";
 
 const PortfolioItem = ({title, imgUrl, stack, link, description}) => {
   return (
-    <div className="lg:w-full rounded l overflow-hidden relative mt-8">
-      <div className="absolute inset-0 w-full bg-gradient-to-r from-black to-gray-400 opacity-90"></div>
-      <img
-        src={imgUrl}
-        alt="image"
-        className="w-full min-h-full opacity-10  md:h-48 object-cover cursor-pointer absolute"
-      />
+    <div className="lg:w-full rounded overflow-hidden relative mt-8 md:mx-20">
+      <div className="absolute rounded-lg inset-0 w-full md:h-2/3  md:w-2/3  bg-gradient-to-r from-black to-gray-400 opacity-90 md:opacity-90 md:transition-opacity duration-300">
+        <img
+          src={imgUrl}
+          alt="image"
+          className="w-full min-h-full  opacity-10  md:h-48 object-cover cursor-pointer absolute duration-100 hover:opacity-100 rounded-lg"
+        />
+      </div>
 
-      <div className="relative inset-0 flex flex-col p-4 min-h-full ">
-        <p className="text-gray-200 text-sm font-raleway tracking-wider ">Featured Project</p>
-        <p className="text-white hover:text-hover-200 text-xl font-bold  md:text-xl mb-2 md:mb-3 ">
+      <div className="relative md:w-1/2 md: md:mx-[19rem] inset-0 flex flex-col p-4 min-h-full">
+        <p className="text-gray-200 md:text-gray-800 md:text-base md:text-right text-sm md:font-medium font-raleway tracking-wider ">
+          Featured Project
+        </p>
+        <p className="text-white md:text-hover-300 hover:text-hover-200 text-xl font-bold  md:text-3xl md:text-right mb-2 md:mb-3 ">
           {title}
         </p>
-        <p className="text-white text-justify my-6">{description}</p>
-        <p className="flex flex-wrap gap-2 py-3 flex-row items-center justify-start text-white font-raleway tracking-wider text-xs md:text-sm">
+        <p className="md:z-20 text-white md:text-gray-700 md:text-base md:bg-white md:p-4 text-justify md:border-2 md:rounded-md md:border-hover-200 my-6 md:ml-[-10rem]">
+          {description}
+        </p>
+        <p className="flex flex-wrap gap-2 py-3 flex-row items-center justify-start text-white font-raleway tracking-wider md:ml-auto text-xs md:text-sm md:z-20">
           {stack.map((item) => (
             <span
               key={item}
@@ -27,22 +32,21 @@ const PortfolioItem = ({title, imgUrl, stack, link, description}) => {
             </span>
           ))}
         </p>
-        <div className='flex flex-row gap-3 items-center py-3'>
+        <div className="flex flex-row gap-3 items-center py-3 md:ml-auto">
           <a
             href="https://github.com/preshlele"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FiGithub size={20} className="hover:text-hover-400 text-white" />
+            <FiGithub
+              size={20}
+              className="hover:text-hover-400 text-white md:text-hover-300"
+            />
           </a>
-          <a
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="#" target="_blank" rel="noopener noreferrer">
             <FiExternalLink
               size={20}
-              className="hover:text-hover-400 text-white"
+              className="hover:text-hover-400 text-white md:text-hover-300"
             />
           </a>
         </div>
