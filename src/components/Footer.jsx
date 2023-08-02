@@ -5,14 +5,14 @@ import Button from './Button';
 const Footer = () => {
   return (
     <div id="contact">
-      <div className="relative flex items-center mt-8 px-5">
+      <div className="relative flex items-center mt-8 px-5 md:px-20">
         <div className="flex-grow border-t border-gray-300"></div>
         <span className="flex-shrink mx-4 text-2xl font-bold text-gray-700">
           Contact
         </span>
         {/* <div className="flex-grow border-t border-hover-400"></div> */}
       </div>
-      <div className="h-full py-8 px-4 w-full flex flex-col items-center justify-center gap-3">
+      <div className="h-full py-8 px-4 md:px-[2rem] w-full flex flex-col items-center justify-center gap-3">
         <h1 className="text-4xl font-bold">Get In Touch</h1>
         <p className="text-center text-gray-700 font-normal px-3">
           I'm committed to expanding my knowledge and expertise in the field,

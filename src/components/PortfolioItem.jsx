@@ -13,16 +13,16 @@ const PortfolioItem = ({title, imgUrl, stack, link, description}) => {
       </div>
 
       <div className="relative md:w-1/2 md: md:mx-[19rem] inset-0 flex flex-col p-4 min-h-full">
-        <p className="text-gray-200 md:text-gray-800 md:text-base md:text-right text-sm md:font-medium font-raleway tracking-wider ">
+        <p className="text-gray-200 md:text-gray-800 md:text-base md:text-right text-sm md:font-medium font-raleway tracking-wider z-20">
           Featured Project
         </p>
         <p className="text-white md:text-hover-300 hover:text-hover-200 text-xl font-bold  md:text-3xl md:text-right mb-2 md:mb-3 ">
           {title}
         </p>
-        <p className="md:z-20 text-white md:text-gray-700 md:text-base md:bg-white md:p-4 text-justify md:border-2 md:rounded-md md:border-hover-200 my-6 md:ml-[-10rem]">
+        <p className="md:z-20 text-white md:text-gray-700 md:text-base md:bg-white md:p-4 text-justify md:border-2  md:border-hover-200 my-6 md:ml-[-10rem]">
           {description}
         </p>
-        <p className="flex flex-wrap gap-2 py-3 flex-row items-center justify-start text-white font-raleway tracking-wider md:ml-auto text-xs md:text-sm md:z-20">
+        <p className="flex flex-wrap gap-2 py-3 md:py-8 flex-row items-center justify-start text-white font-raleway min-w-full tracking-wider md:ml-[-10rem] text-xs md:text-sm">
           {stack.map((item) => (
             <span
               key={item}
