@@ -14,7 +14,7 @@ const Footer = () => {
       </div>
       <div className="h-full py-8 px-4 md:px-[2rem] w-full flex flex-col items-center justify-center gap-3">
         <h1 className="text-4xl font-bold">Get In Touch</h1>
-        <p className="text-center text-gray-700 font-normal px-3">
+        <p className="text-center text-gray-700 font-normal px-3 md:px-12">
           I'm committed to expanding my knowledge and expertise in the field,
           let's bring your imagination to life. Don't
           hesitate to reach out - I'll do my best to respond promptly.

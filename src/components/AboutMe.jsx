@@ -3,23 +3,24 @@ import techstack from "../data/techstack";
 import { BiSolidRightArrow } from "react-icons/bi";
 import profilePic from "../assets/Presh-pic.png";
 
-const Intro = () => {
+const AboutMe = () => {
   return (
     <div id="about" className="scroll-mt-36">
-      <div className="relative flex items-center px-5 md:px-20">
+      <div className="relative flex items-center px-5 md:px-20 lg:px-56">
         {/* <div className="flex-grow border-t border-hover-400"></div> */}
         <span className="flex-shrink mx-4 text-2xl font-bold text-gray-700">
           About Me
         </span>
         <div className="flex-grow border-t border-gray-300"></div>
       </div>
-      <div className="flex flex-col md:flex-row md:gap-14  items-center px-5 md:px-[4rem] text-justify justify-center  pt-8 pb-6">
+      <div className="flex flex-col md:flex-row md:gap-14  items-center px-5 md:px-[4rem] lg:px-[5.8rem] text-justify justify-center  pt-8 pb-6">
         <div className=" w-full md:w-3/5 h-full">
           <span className="text-base md:text-lg text-justify">
-            Hi, I am Emmanuel, a Ghanaian based frontend developer passionate about crafting visually appealing websites
-            prioritizing aesthetics and user experience. I am an expert in web
-            and mobile interface design, creating intuitive, responsive designs
-            for diverse user groups.
+            Hi, I am Emmanuel, a Ghanaian based frontend developer passionate
+            about crafting visually appealing websites prioritizing aesthetics
+            and user experience. I am an expert in web and mobile interface
+            design, creating intuitive, responsive designs for diverse user
+            groups.
             <p className="mt-3">
               Currently I am focused on building accessible, high-quality
               products and digital experiences and dedicated to delivering
@@ -44,13 +45,13 @@ const Intro = () => {
             </ul>
           </div>
         </div>
-        <div className="mt-20 md:-mt-[19rem] relative">
+        <div className="mt-20 md:-mt-[19rem] lg:-mt-[8.8rem] relative">
           <img src={profilePic} alt="Profile picture" className="" />
-          <div className="absolute text-center top-0 w-full h-full rounded-full bg-hover-200 bg-blend-overlay bg-opacity-75 transition-opacity duration-300 hover:bg-opacity-0"></div>
+          <div className="absolute text-center top-0 w-full h-full rounded-full bg-hover-200 bg-blend-overlay bg-opacity-75  transition duration-500 delay-150 hover:bg-opacity-0"></div>
         </div>
       </div>
 
-      <div className="relative flex items-center mt-[12rem] md:mt-72 px-4 md:px-24">
+      <div className="relative flex items-center mt-[12rem] md:mt-72 px-5 md:px-24 lg:px-56">
         <div className="flex-grow border-t border-gray-300"></div>
         <span className="flex-shrink mx-4 text-2xl font-bold text-gray-700">
           Experience
@@ -61,4 +62,4 @@ const Intro = () => {
   );
 };
 
-export default Intro;
+export default AboutMe;

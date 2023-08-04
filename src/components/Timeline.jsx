@@ -17,8 +17,8 @@ const Timeline = () => {
   }, []);
   return (
     <div id="experience" className="scroll-mt-56">
-      <div className="flex md:flex-row flex-col justify-center w-full my-8  md:px-20">
-        <div className=" w-full md:w-2/5  py-3 flex sm:flex-col px-5 overflow-x-scroll">
+      <div className="flex md:flex-row flex-col justify-center w-full my-8  md:px-20 lg:px-56 lg:mb-[16rem]">
+        <div className=" w-full md:w-2/5  py-3 flex sm:flex-col px-5 overflow-x-scroll lg:overflow-auto">
           {workExperience.map((item) => (
             <div
               key={item.id}

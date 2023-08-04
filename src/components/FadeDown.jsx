@@ -9,7 +9,7 @@ const FadeDown = () => {
 
   return (
     <motion.div
-      className="px-4 md:px-24 mt-8 md:mt-32"
+      className="px-4 md:px-24 lg:px-60 mt-8 md:mt-32"
       initial="hidden"
       animate="show"
       viewport={{ once: true }}
@@ -37,12 +37,12 @@ const FadeDown = () => {
       >
         I build digital experiences for the web.
       </motion.p>
-      <p className="mt-6 text-justify md:text-lg mb-12">
+      <p className="mt-6 text-justify md:text-lg mb-12 lg:w-2/3">
         I am a Frontend Engineer and I focus on building unique digital
         experiences for the web. I am dedicated to continuous learning and
         embracing emerging technologies for innovative solutions.
       </p>
-      <div className="flex flex-row justify-evenly mt-24 mb-48 md:mb-[23.5rem] px-12 md:px-36">
+      <div className="flex flex-row justify-evenly mt-24 mb-48 md:mb-[23.5rem] px-12 md:px-36 lg:gap-6 lg:justify-center">
         <a
           href="https://github.com/preshlele"
           target="_blank"
