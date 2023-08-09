@@ -25,9 +25,14 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
-      <div className="hidden md:flex px-5">
+      <a
+        href="https://drive.google.com/file/d/1ffSL5PbmY13fSqJh4tnx6sVGYOB9rft-/view?usp=sharing"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hidden md:flex px-5"
+      >
         <Button buttonText={"Resume"} />
-      </div>
+      </a>
       <div onClick={handleNav} className="relative md:hidden">
         {nav ? (
           <div className=" relative z-40 text-hover-400 ">
