@@ -1,7 +1,7 @@
 export default [
   {
     title: "Mosaic Church",
-    imgUrl: "public/images/mosaic.png",
+    imgUrl: "/images/mosaic.png",
     description:
       "Designed a dynamic church website leveraging Next.js and Tailwind CSS. The project served as an opportunity to explore the latest features of Next.js 13, including file-based routing, and enhance my skills in image and background manipulation within the Next.js framework. The result is a seamless and visually appealing online platform for the church community.",
     stack: ["NextJs", "Tailwind Css", "Vite"],
