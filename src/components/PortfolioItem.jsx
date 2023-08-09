@@ -1,7 +1,7 @@
 import React from 'react'
 import { FiGithub, FiExternalLink } from "react-icons/fi";
 
-const PortfolioItem = ({title, imgUrl, stack, link, description}) => {
+const PortfolioItem = ({title, imgUrl, stack, link, description, github}) => {
   return (
     <div className="lg:w-2/3 rounded  relative mt-8 lg:mt-28 md:mx-20">
       <div className="absolute rounded-lg inset-0 w-full md:h-2/3  md:w-2/3  bg-gradient-to-r from-black to-gray-400 opacity-90 md:opacity-90 md:transition-opacity duration-300">
@@ -34,7 +34,7 @@ const PortfolioItem = ({title, imgUrl, stack, link, description}) => {
         </p>
         <div className="flex flex-row gap-3 items-center py-3 md:ml-auto">
           <a
-            href="https://github.com/preshlele"
+            href={github}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -43,7 +43,7 @@ const PortfolioItem = ({title, imgUrl, stack, link, description}) => {
               className="hover:text-hover-400 text-white md:text-hover-300"
             />
           </a>
-          <a href="#" target="_blank" rel="noopener noreferrer">
+          <a href={link} target="_blank" rel="noopener noreferrer">
             <FiExternalLink
               size={20}
               className="hover:text-hover-400 text-white md:text-hover-300"

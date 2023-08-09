@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { navLinks } from "../data/navlinks";
 import Button from "./Button";
+// import logo from "../assets/PRESH.png"
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -12,19 +13,20 @@ const Navbar = () => {
 
   return (
     <div className="flex fixed w-full justify-between items-center h-28 max-w-full mx-auto px-4  bg-white backdrop-blur-lg bg-opacity-30 z-10 text-black">
-      <h1 className="w-full text-3xl font-bold text-hover-400">Nav.</h1>
-      <ul className="hidden md:flex  font-raleway  font-medium">
+      <span className="w-full text-3xl font-bold text-hover-400 cursor-default">
+        {/* <img src={logo} alt="logo" width={150} height={100} className="object-cover" /> */}
+        <h2 className="font-raleway text-2xl">&lt;Presh/&gt;</h2>
+      </span>
+      <ul className="hidden md:flex  font-raleway font-medium">
         {/* desktop menu */}
         {navLinks.map((link) => (
           <li key={link.name} className="p-4 ">
-            <a href={`#${link.path}`}>
-              {link.name}
-            </a>
+            <a href={`#${link.path}`}>{link.name}</a>
           </li>
         ))}
       </ul>
       <div className="hidden md:flex px-5">
-      <Button buttonText={"Resume"} />
+        <Button buttonText={"Resume"} />
       </div>
       <div onClick={handleNav} className="relative md:hidden">
         {nav ? (
@@ -48,7 +50,14 @@ const Navbar = () => {
             key={link.name}
             className="p-4  relative top-20 text-center hover:text-hover-300 z-20"
           >
-            <a href={`#${link.path}`} onClick={handleNav}>
+            <a
+              href={`#${link.path}`}
+              onClick={() => {
+                if (nav) {
+                  handleNav();
+                }
+              }}
+            >
               {link.name}
             </a>
           </li>

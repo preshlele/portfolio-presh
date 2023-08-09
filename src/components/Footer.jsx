@@ -5,19 +5,19 @@ import Button from './Button';
 const Footer = () => {
   return (
     <div id="contact">
-      <div className="relative flex items-center mt-8 px-5 md:px-20">
+      <div className="relative flex items-center mt-8 px-5 md:px-20 lg:px-56">
         <div className="flex-grow border-t border-gray-300"></div>
         <span className="flex-shrink mx-4 text-2xl font-bold text-gray-700">
           Contact
         </span>
         {/* <div className="flex-grow border-t border-hover-400"></div> */}
       </div>
-      <div className="h-full py-8 px-4 md:px-[2rem] w-full flex flex-col items-center justify-center gap-3">
+      <div className="h-full py-8 px-4 md:px-[2rem] lg:px-48 w-full flex flex-col items-center justify-center gap-3">
         <h1 className="text-4xl font-bold">Get In Touch</h1>
-        <p className="text-center text-gray-700 font-normal px-3 md:px-12">
+        <p className="text-center text-base md:text-lg text-gray-700 font-normal px-3 md:px-12">
           I'm committed to expanding my knowledge and expertise in the field,
-          let's bring your imagination to life. Don't
-          hesitate to reach out - I'll do my best to respond promptly.
+          let's bring your imagination to life. Don't hesitate to reach out -
+          I'll do my best to respond promptly.
         </p>
         <div className="my-8">
           <Button buttonText="Say Hello" />
@@ -45,7 +45,7 @@ const Footer = () => {
             </a>
           </div>
           <div>
-            <p className="text-sm hover:text-hover-400 font-raleway font-medium">
+            <p className="text-sm hover:text-hover-400 cursor-pointer font-raleway font-medium">
               Built by Emmanuel Mensah &copy;2023
             </p>
           </div>

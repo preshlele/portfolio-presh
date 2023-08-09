@@ -21,6 +21,7 @@ const Portfolio = () => {
               description={item.description}
               stack={item.stack}
               link={item.link}
+              github={item.github}
             />
           ))}
         </div>
