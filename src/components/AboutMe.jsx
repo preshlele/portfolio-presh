@@ -35,11 +35,11 @@ const AboutMe = () => {
             <ul className="w-full grid grid-cols-2 gap-x-20 p-5">
               {techstack[0].tech.map((item) => (
                 <li
-                  key={item.tech}
+                  key={item.id}
                   className="flex gap-2 text-sm md:text-base items-center py-1 font-raleway tracking-wider font-medium whitespace-nowrap"
                 >
                   <BiSolidRightArrow size={8} className="text-hover-400" />
-                  {item}
+                  {item.name}
                 </li>
               ))}
             </ul>

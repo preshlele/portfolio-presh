@@ -12,6 +12,16 @@ const workExperience = [
   },
   {
     id: 2,
+    company: "SlightlyTechie",
+    role: "Frontend Engineer",
+    duration: "July 2023 - present",
+    tasks: [
+      "Developed and implemented frontend solutions using ReactJS, Typescript, and Tailwind CSS for the Slightly Techie School platform, with a focus on optimizing the signup flow and registration process",
+      "Contributed to the development of a SaaS application for managing employee data, including skills, personal details, and project assignments, improving workforce and project management efficiency",
+    ],
+  },
+  {
+    id: 3,
     company: "Freelance",
     role: "Frontend Engineer",
     duration: "June 2022 - Jan 2023",
